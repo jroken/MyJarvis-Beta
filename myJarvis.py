@@ -17,8 +17,8 @@ while True:
         ses = r.listen(source, timeout=10, phrase_time_limit=10)
         print(r.recognize_google(ses, language='tr-tr'))
         veri = r.recognize_google(ses, language='tr-tr')
-    if (veri == 'Carvis'):
+    if (veri == 'Jarvis'):
         engine.say('Yes, I am listening you')
         engine.runAndWait()
-    if (veri=='Carvis Işıkları Aç'):
+    if (veri=='Jarvis Işıkları Aç'):
         engine.say("Okey the lights are on")
